@@ -142,132 +142,132 @@ import messageicon from "./messageicon.png"
 
 import close from "./close.png"
 function App() {
-  // const [chatVisible, setChatVisible] = useState(false);
+  const [chatVisible, setChatVisible] = useState(false);
 
-  // const handleImageClick = () => {
-  //   setChatVisible(!chatVisible);
-  //   console.log(chatVisible)
-  // };
-  // const steps = [
+  const handleImageClick = () => {
+    setChatVisible(!chatVisible);
+    console.log(chatVisible)
+  };
+  const steps = [
 
-  //   {
+    {
 
-  //     id: "Greet",
+      id: "Greet",
 
-  //     message: "Hello, Welcome to our shop",
+      message: "Hello, Welcome to our shop",
 
-  //     trigger: "Done",
+      trigger: "Done",
 
-  //   },
+    },
 
-  //   {
+    {
 
-  //     id: "Done",
+      id: "Done",
 
-  //     message: "Please enter your name!",
+      message: "Please enter your name!",
 
-  //     trigger: "waiting1",
+      trigger: "waiting1",
 
-  //   },
+    },
 
-  //   {
+    {
 
-  //     id: "waiting1",
+      id: "waiting1",
 
-  //     user: true,
+      user: true,
 
-  //     trigger: "Name",
+      trigger: "Name",
 
-  //   },
+    },
 
-  //   {
+    {
 
-  //     id: "Name",
+      id: "Name",
 
-  //     message: "Hi {previousValue}, Please select your issue",
+      message: "Hi {previousValue}, Please select your issue",
 
-  //     trigger: "issues",
+      trigger: "issues",
 
-  //   },
+    },
 
-  //   {
+    {
 
-  //     id: "issues",
+      id: "issues",
 
-  //     options: [
+      options: [
 
-  //       {
+        {
 
-  //         value: "React",
+          value: "React",
 
-  //         label: "React",
+          label: "React",
 
-  //         trigger: "React",
+          trigger: "React",
 
-  //       },
+        },
 
-  //       { value: "Angular", label: "Angular", trigger: "Angular" },
+        { value: "Angular", label: "Angular", trigger: "Angular" },
 
-  //     ],
+      ],
 
-  //   },
+    },
 
-  //   {
+    {
 
-  //     id: "React",
+      id: "React",
 
-  //     message:
+      message:
 
-  //       "Thanks for letting your React issue, Our team will resolve your issue ASAP",
+        "Thanks for letting your React issue, Our team will resolve your issue ASAP",
 
-  //     // end: true,
+      // end: true,
 
-  //   },
+    },
 
-  //   {
+    {
 
-  //     id: "Angular",
+      id: "Angular",
 
-  //     message:
+      message:
 
-  //       "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",
+        "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",
 
-  //     // end: true,
+      // end: true,
 
-  //   },
+    },
 
-  // ]; 
+  ]; 
   return (
-  //   <div>
-  //  { !chatVisible &&<img
-  //   style={{ position: "fixed", bottom: "20px", right: "20px" ,cursor: "pointer"}}
-  //     src={messageicon}
-  //     alt="Chat Icon"
-  //     onClick={handleImageClick}
+    <div>
+   { !chatVisible &&<img
+    style={{ position: "fixed", bottom: "20px", right: "20px" ,cursor: "pointer"}}
+      src={messageicon}
+      alt="Chat Icon"
+      onClick={handleImageClick}
 
-  //   />}
-  //   {chatVisible && (
-  //    <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
-  //     <img 
-  //     src={close}
-  //      alt="Close Icon"
-  //      style={{
-  //       position: "absolute",
-  //   top: "-504px",
-  //   right:" 65px",
-  //   cursor: "pointer",
+    />}
+    {chatVisible && (
+     <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+      <img 
+      src={close}
+       alt="Close Icon"
+       style={{
+        position: "absolute",
+    top: "-504px",
+    right:" 65px",
+    cursor: "pointer",
  
-  //   height: "30px",
-  //       zIndex: 1,
-  //     }}
-  //      onClick={handleImageClick}/>
-  //     <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
-  //       <Segment style={{ width: "400px" }}>
-  //         <ChatBot steps={steps} />
-  //       </Segment>
-  //     </div></div>
-  //   )}
-  // </div>
+    height: "30px",
+        zIndex: 1,
+      }}
+       onClick={handleImageClick}/>
+      <div style={{ position: "fixed", bottom: "20px", right: "20px" }}>
+        <Segment style={{ width: "400px" }}>
+          <ChatBot steps={steps} />
+        </Segment>
+      </div></div>
+    )}
+  </div>
   <>
   App
   </>
